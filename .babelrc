@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "spec": true,
+        "useBuiltIns": "usage",
+        "modules": false,
+        "corejs": 3
+      }
+    ],
+    "@babel/react",
+    "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    ["@babel/plugin-proposal-class-properties", { "lose": true }]
+  ]
+}
